@@ -335,8 +335,7 @@ select {
   background: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 26.64px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
 }
 /* typography
 -------------------------------------------------------------- */
@@ -464,7 +463,6 @@ a:active {
 /* Header
 -------------------------------------------------------------- */
 header {
-  padding: 20px 0;
   background: transparent;
   margin: 20px auto;
 }
@@ -520,7 +518,6 @@ header nav ul li a {
 }
 .container {
   max-width: 720px;
-  padding: 20px;
   margin: 0 auto;
   position: relative;
 }
@@ -529,7 +526,7 @@ header nav ul li a {
 article {
   background: transparent;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #dddddd;
 }
 article .title {
@@ -558,7 +555,7 @@ article .post-meta a:hover {
   color: rgba(136, 136, 136, 0.5);
 }
 article .the-content a {
-  font-weight: 900;
+  font-weight: 700;
   text-decoration: none;
 }
 article .the-content p {
@@ -591,7 +588,15 @@ article .meta .post-categories li {
   border-bottom: none;
 }
 .page article .title {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+/* Hide all meta content, main purpose is to get rid of the "on" text preceding categories */
+.entry-meta {
+visibility: hidden;
+}
+/* Get rid of space being taken up by tags and category content */
+.tags, .category {
+display: none;
 }
 /* Pagination */
 #pagination {
@@ -658,7 +663,7 @@ h3#comments {
 }
 footer {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   font-size: 12px;
 }
 /* Misc & mixens
